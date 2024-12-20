@@ -1,0 +1,72 @@
+<body>
+    <div class="wrapper" [class.active]="isActive">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
+        <!-- Login Form -->
+        <div class="form-box login">
+            <h2 class="animation" style="--i:0; --j:21">GİRİŞ</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:1; --j:22">
+                    <input type="text" required>
+                    <label>Kullanıcı Adı</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:2; --j:23">
+                    <input type="password" required>
+                    <label>Şifre</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:3; --j:24">Giriş Yap</button>
+                <div class="logreg-link animation" style="--i:4; --j:25">
+                    <p>
+                        Hesabınız yok mu?
+                        <a href="#" (click)="toggleForm()">Kayıt Ol</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Welcome Text for Login -->
+        <div class="info-text login">
+            <h2 class="animation" style="--i:0; --j:20">MERHABA</h2>
+            <p class="animation" style="--i:1; --j:21">Giriş yapmaya hoşgeldiniz.</p>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-box register">
+            <h2 class="animation" style="--i:17; --j:0">KAYIT OL</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:18; --j:1">
+                    <input type="text" required>
+                    <label>Kullanıcı Adı</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:19; --j:2">
+                    <input type="email" required>
+                    <label>Email</label>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box animation" style="--i:20; --j:3">
+                    <input type="password" required>
+                    <label>Şifre</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:21; --j:4">Kayıt Ol</button>
+                <div class="logreg-link animation" style="--i:22; --j:5">
+                    <p>
+                        Zaten bir hesabınız var mı?
+                        <a href="#" (click)="toggleForm()">Giriş Yap</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Welcome Text for Register -->
+        <div class="info-text register">
+            <h2 class="animation" style="--i:17; --j:0;">Merhaba</h2>
+            <p class="animation" style="--i:18; --j:1;">Hesap oluşturmaya hoşgeldiniz.</p>
+        </div>
+    </div>
+
+</body>
